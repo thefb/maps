@@ -1,11 +1,11 @@
 import faker from 'faker'
+import { Location } from './Interfaces/Location'
 
 export class User {
   name: string
-  location: {
-    lat: number,
-    lng: number
-  }
+  location: Location
+
+
   constructor() {
     this.name = `${faker.name.firstName()} ${faker.name.lastName()}`
     this.location = {
