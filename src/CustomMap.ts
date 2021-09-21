@@ -1,6 +1,6 @@
 import { Location } from './Interfaces/Location'
 
-interface Mappable {
+export interface Mappable {
   location: Location,
   markerContent(): string
 }
